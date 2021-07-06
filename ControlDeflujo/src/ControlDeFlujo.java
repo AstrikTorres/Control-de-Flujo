@@ -71,19 +71,18 @@ public class ControlDeFlujo {
 		 "No cumples lo requisitos para el bootcamp Java Full Stack"
 		 */
 		
-		Scanner leerNombre = new Scanner(System.in);
+		Scanner leer = new Scanner(System.in);
 		System.out.println("Ingresa tu nombre");
 		
-		String nombre = leerNombre.nextLine();
+		String nombre = leer.nextLine();
 		
-		Scanner leerEdad = new Scanner(System.in);
 		System.out.println("Ingresa tu edad");
 		
-		int edad = leerEdad.nextInt();
+		int edad = leer.nextInt();
 		
 		String mensaje = ingreso(edad, nombre);		
 		System.out.println(mensaje);
-		
+		leer.close();
 		
 	}
 
